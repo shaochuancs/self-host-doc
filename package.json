@@ -7,7 +7,7 @@
     "buildBackend": "npx webpack --config webpack.backend.config.js",
     "buildFrontend": "npx webpack --config webpack.frontend.config.js",
     "start": "node dist/server/bundle.js",
-    "test": "TZ=UTC npx jest && npx coveralls < coverage/lcov.info && rm -rf ./coverage"
+    "test": "TZ=UTC npx jest"
   },
   "repository": {
     "type": "git",
