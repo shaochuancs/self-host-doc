@@ -50,7 +50,8 @@ function configureApp(app) {
       'X-XSS-Protection': '1; mode=block',
       'Expect-CT': 'max-age=86400',
       'Content-Security-Policy': 'default-src \'self\' https:;' +
-                                 'script-src \'self\' \'unsafe-eval\''
+                                 'script-src \'self\' \'unsafe-eval\';' +
+                                 'style-src \'self\' \'unsafe-inline\';'
     });
 
     next();
@@ -64,12 +65,12 @@ function configureApp(app) {
 }
 
 function configureRoute(app) {
-  app.use('/app/s', expressjwt({
+  app.use('/app', expressjwt({
     secret: app.get('SECRET'),
     algorithms: ['HS256'],
     getToken: (req)=>{
       return req.cookies.token || null;
-    }}));
+    }}).unless({path: ['/app/login']}));
   app.get('/app*', (req, res) => {
     res.render('index', {layout: false});
   });
