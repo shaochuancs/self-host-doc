@@ -1,4 +1,5 @@
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/shaochuancs/self-host-doc/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/shaochuancs/self-host-doc/tree/master)
+[![Coverage Status](https://coveralls.io/repos/github/shaochuancs/self-host-doc/badge.svg?branch=master)](https://coveralls.io/github/shaochuancs/self-host-doc?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7133816b91576173c1dd/maintainability)](https://codeclimate.com/github/shaochuancs/self-host-doc/maintainability)
 
 # self-host-doc
