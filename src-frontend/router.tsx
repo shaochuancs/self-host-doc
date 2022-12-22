@@ -10,7 +10,7 @@ import ErrorPage from './component/ErrorPage';
 import Framework from './component/Framework';
 import Item from './component/Item';
 import Login from './component/Login';
-import SecurePage from './component/SecurePage';
+import Editor from './component/Editor';
 
 const React = require('react');
 
@@ -26,11 +26,8 @@ const router = createBrowserRouter([{
   path: '/app/login',
   element: <Login />
 }, {
-  path: '/app/s',
-  children: [{
-    path: 'page',
-    element: <SecurePage />
-  }]
+  path: '/app/editor',
+  element: <Editor />
 }]);
 
 export default router;
