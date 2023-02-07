@@ -1,6 +1,6 @@
 {
   "name": "self-host-doc",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Self Host Document System",
   "scripts": {
     "build": "npm run buildBackend && npm run buildFrontend",
