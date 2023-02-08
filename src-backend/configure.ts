@@ -4,14 +4,14 @@
 
 'use strict';
 
-import ConfigService from "./service/ConfigService";
-import {parsePort} from "./util/network";
+import ServiceConfig from './config/ServiceConfig';
+import {parsePort} from './util/network';
 
 require('./logger/configure-logger');
 
 function configure() {
-  ConfigService.setConfig('PORT', parsePort(process.env.PORT));
-  ConfigService.setConfig('SECRET', process.env.SECRET);
+  ServiceConfig.set('PORT', parsePort(process.env.PORT));
+  ServiceConfig.set('SECRET', process.env.SECRET);
 }
 
 export default configure;

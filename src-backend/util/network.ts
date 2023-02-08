@@ -4,7 +4,7 @@
 
 'use strict';
 
-import {Request, Response} from "express";
+import {Request, Response} from 'express';
 
 const moment = require('moment');
 

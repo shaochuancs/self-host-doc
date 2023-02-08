@@ -8,6 +8,7 @@ import {createRoot} from 'react-dom/client';
 import {RouterProvider} from 'react-router-dom';
 
 import router from './router';
+import './main.less';
 
 const React = require('react');
 
